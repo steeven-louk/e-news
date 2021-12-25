@@ -1,0 +1,140 @@
+$text-color : #fff;
+$bg-color : #393939;
+$second-color: #F50707;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: linear .4s ease;
+    outline: none;
+    list-style-type: none;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+html{
+    min-height: 150vh;
+    scroll-behavior: none;
+    scrollbar-width: 0;
+}
+
+.space{
+    height: 3px;
+    background: #000;
+}
+.titre{
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1;
+}
+
+.boutton{
+    display: block;
+    color: $text-color;
+    background-color: $second-color;
+    width: 100%;
+    border: none;
+    padding: 4px;
+    text-transform: capitalize;
+    font-size: 23px;
+    margin-top: 10px;
+    letter-spacing: 2;
+}
+span {
+    color: $second-color;
+    text-transform: capitalize;
+}
+
+nav {
+    position:fixed;
+    z-index: 55;
+    background-color: $bg-color;
+    color: $text-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+
+    ul{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        overflow: hidden;
+   
+    li {
+       // display: inline-block;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+
+        &:hover{
+            background-color: $second-color;
+        }
+
+        a{
+            color: $text-color;
+            text-decoration: none;
+            outline: none;
+            list-style: none;
+
+            &:hover{
+                color: $text-color;
+            }
+
+        }
+    }
+ }
+}
+
+header{
+    margin: 1rem 0;
+}
+
+
+
+//footer
+
+footer  .left{
+    display: flex;
+}
+
+footer {
+    background-color: $bg-color;
+    padding: 12px;
+    color: $text-color;
+
+    .conteneur{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .social {
+
+        .fab{
+            padding: 10px;
+            border-radius: 15px;
+            margin-left: 10px;
+            color: $text-color;
+            cursor: pointer;
+        }
+        
+         i:nth-child(1){
+            background-color: blue;
+        }
+         i:nth-child(2){
+            background-color: rgb(58, 58, 216);
+        }
+         i:nth-child(3){
+            background-color: #000;
+        }
+         i:nth-child(4){
+            background-color: red;
+        }
+    }
+}

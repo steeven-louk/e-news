@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <title>News</title>
+</head>
+<body style="background-color: azure;">
+    
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark text-uppercase">
+        <a class="navbar-brand" href="#"><i class="far fa-newspaper mx-1"></i>News<span class="text-danger">Cast</span> </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ml-3" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active bg-danger">
+                    <a class="nav-link" href="#">Actualité</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Afrique News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Politique</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Debat</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6 left">
+                    <div class="img">
+                        <img src="https://img.lemde.fr/2021/12/02/0/0/4217/2811/664/0/75/0/06d4bfe_5119776-01-06.jpg" width="550" alt="">
+                        <h3>Covid-19 : la cinquième vague est-elle vraiment différente des précédentes ?</h3>
+                    </div>
+                </div>
+                <div class="col-md-6 right">
+                   <div class="row">
+                    <div class="col-6">
+                        <img src="https://www.leparisien.fr/resizer/m5p5i3KDALO61fvgejspk-YBAW0=/360x225/cloudfront-eu-central-1.images.arcpublishing.com/leparisien/7JAS3DROQ5BP7PXN6YT7BYRKM4.jpg" width="250" alt="">
+                        <h5>Drogués à leur insu : le fléau du GHB plane de plus en plus sur les fêtes parisiennes</h5>
+                    </div>
+                    <div class="col-6">
+                        <img src="https://www.leparisien.fr/resizer/R9TCa_bEN8xfdvkzpNWZKgmdAzo=/360x225/cloudfront-eu-central-1.images.arcpublishing.com/leparisien/VI7OIFG6X5E5JCHNIIDZY6OVYY.jpg" width="250" alt="">
+                        <h5>Paris : plus de 200 migrants évacués d’un tunnel reliant la Seine-Saint-Denis</h5>
+                    </div>
+                   </div>
+                   <div class="mt-1">
+                       <img src="https://images.outbrainimg.com/transform/v3/eyJpdSI6ImZjNTViMmU3ODYyMjYwZWRkMWQ4ZTZmZWQ2ZjQ1MWNmNTcyYWQ1ZjZjODhkN2ZmMjRlYjBjYTM5ODJmZDAyMTYiLCJ3IjoyNTUsImgiOjEyNSwiZCI6MS41LCJjcyI6MCwiZiI6MH0.jpg" width="100%" alt="">
+                   </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>
