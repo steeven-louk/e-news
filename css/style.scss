@@ -17,6 +17,12 @@ html{
     min-height: 150vh;
     scroll-behavior: none;
     scrollbar-width: 0;
+    line-height: 1.6;
+    background:#f5f6f8;
+}
+
+header, section{
+    background-color: #fff!important;
 }
 
 .space{
@@ -40,6 +46,19 @@ html{
     font-size: 23px;
     margin-top: 10px;
     letter-spacing: 2;
+}
+
+.news{
+    font-size: 20px;
+    color: #000;
+
+    i{
+        width: 35px;
+        font-size: 2rem;
+        padding: 3px;
+        background: rgb(231, 104, 0);
+        color: $text-color;
+    }
 }
 span {
     color: $second-color;
@@ -85,6 +104,9 @@ nav {
             &:hover{
                 color: $text-color;
             }
+            &:active{
+                background-color: $second-color;
+            }
 
         }
     }
@@ -93,6 +115,22 @@ nav {
 
 header{
     margin: 1rem 0;
+
+    .img-container{
+        position: relative;
+        overflow: hidden;
+        outline: none;
+        padding: 2px;
+        cursor: pointer;
+
+        .titre{
+            position: absolute;
+            bottom: 0;
+            color: $text-color;
+            background-color: rgba(117, 108, 108, 0.5);
+            overflow-x: none;
+        }
+    }
 }
 
 
