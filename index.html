@@ -12,20 +12,20 @@
     <title>S-NEWS</title>
 </head>
 <body>
-    <h1 class=""><a href="" class="nav-brand">s-<span>news</span></a></h1>
+    <div class="top">
+        <h1 class="nav-title"><a href="" class="nav-brand">s-<mark>news</mark></a></h1>
+        <li id="bars"><i class="far fa-bars"></i></li>
+    </div>
     <nav>
         <ul>
-            <li><a href="/" class="nav-link" active>Home</a></li>
+            <li class="active"><a href="/" class="nav-link" active>Home</a></li>
             <li><a href="#" class="nav-link">Actualités</a></li>
             <li><a href="#" class="nav-link">Afrique news</a></li>
             <li><a href="#" class="nav-link">politique</a></li>
-            <li><a href="#" class="nav-link">debat</a></li>
+            <li><a href="./singlePage.html" class="nav-link">debat</a></li>
             <li><a href="#" class="nav-link">presidentiel 2022</a></li>
         </ul>
-        <div class="search">
-            <input type="text" name="search" class='form-control'>
-        </div>
-        <i class="far fa-bars"></i>
+        
 
     </nav>
     
@@ -60,8 +60,8 @@
         </div>
     </header>
 
-    <section id="afriqueNews" class="mx-4 ">
-        <h1 class="titre">afrique<span>news</span></h1>
+    <section id="afriqueNews" class="mx-4">
+        <h1 class="titre">afrique<mark>news</mark></h1>
         <hr class="space">
 
         <div class="conteneur">
@@ -69,11 +69,17 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="https://img.lemde.fr/2021/12/17/0/0/6000/4000/301/0/75/0/97bb4f6_447891720-img-6491-copy.jpg" alt="" class="card-img">
+                            <div class="card-img img-container">
+                                <img src="https://i.f1g.fr/media/cms/376x208_crop/2021/12/25/80e7e7e17f03ebf758ee59c26f8be73ffb7902a5174dd91e39026ac6e64b496e.jpg" alt="" class="card-img">
+                            <h4 class="titre">Le Mali dément tout déploiement de mercenaires du groupe russe Wagner</h4>
+                            </div>
                             <div class="card-body">
-                                <h4 class="text-dark">
-                                    Le maloya, une musique passée de la clandestinité à la célébrité
-                                </h4>
+                                <p class="text-dark">
+                                    Les Occidentaux ont dénoncé le déploiement au Mali, 
+                                    avec l'aide de Moscou, de ces mercenaires qui interviennent 
+                                    déjà en Ukraine, en Syrie, en Libye 
+                                    et dans plusieurs pays d'Afrique subsaharienne.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -123,8 +129,8 @@
         </div>
     </section>
 
-    <section id="electionNews" class="my-5">
-        <h1 class="titre">Élection présidentielle<span>2020</span></h1>
+    <section id="electionNews" class="my-5 mx-4">
+        <h1 class="titre">Élection présidentielle<mark>2022</mark></h1>
         <hr class="space">
 
         <div class="conteneur">
@@ -132,12 +138,16 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="https://place-hold.it/300x300" alt="" class="card-img">
+                            <div class="card-img img-container"  style="position: relative">
+                                <img src="https://img.lemde.fr/2021/12/24/0/0/5000/3333/664/0/75/0/bdc222c_487202203-hl-jcmilhet-1613405.jpg" alt="" class="card-img">
+                                <h4 class="titre">Une campagne présidentielle bousculée par le Covid-19</h4>
+                            </div>
                             <div class="card-body">
-                                <p class="text-muted">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                     Modi voluptatem earum aspernatur, molestias tempora
-                                      omnis quia voluptate aperiam!
+                                <p>
+                                    Les candidats s’adaptent à la situation sanitaire, 
+                                    dont les contraintes permettent aussi à certains de masquer 
+                                    leurs difficultés, 
+                                    comme le manque de ressources financières ou d’adhérents.
                                 </p>
                             </div>
                         </div>
@@ -145,7 +155,7 @@
                     <div class="col-md-7">
                         <div class="row">
                             <div class="col-6">
-                                <p>
+                                <p class="news">
                                     <i class="fas fa-newspaper"></i>
                                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                      Nulla,
@@ -154,7 +164,7 @@
                                 </p>
                             </div>
                             <div class="col-6">
-                                <p>
+                                <p class="news">
                                     <i class="fas fa-newspaper"></i>
                                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                      Nulla,
@@ -163,7 +173,7 @@
                                 </p>
                             </div>
                             <div class="col-6">
-                                <p>
+                                <p class="news">
                                     <i class="fas fa-newspaper"></i>
                                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                      Nulla,
@@ -172,7 +182,7 @@
                                 </p>
                             </div>
                             <div class="col-6">
-                                <p>
+                                <p class="news">
                                     <i class="fas fa-newspaper"></i>
                                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                      Nulla,
@@ -192,9 +202,9 @@
         <footer>
             <div class="">
                 <div class='conteneur mx-4 row'>
-                   <div class="left col-6">
-                        <div class="col-sm-12 col-md-7 mt-3">
-                            <h1 class=""><a href="/">S-<span>news</span></a></h1>
+                   <div class="left col-md-6 col-12">
+                        <div class="col-sm-12 col-12 col-md-7 mt-3">
+                            <h1 class=""><a href="/">S-<mark>news</mark></a></h1>
                             <p class="text-muted">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                  Accusantium, ullam!
@@ -206,7 +216,7 @@
                                 <i class="fab fa-youtube"></i>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-5">
+                        <div class="tags col-sm-12 col-md-5">
                             <h1>Tags</h1>
                             <hr class="space">
                             <span class="badge badge-primary">Primary</span>
@@ -216,8 +226,8 @@
                             <span class="badge badge-warning">Warning</span>
                         </div>
                    </div>
-                   <div class="right col-6" >
-                    <div class="col-6 ml-auto">
+                   <div class="right col-md-6 col-12" >
+                    <div class="col-12 col-md-6 ml-auto">
                         <h1>NewsLetter</h1>
                         <hr class="space">
                         <p class="text-muted">
@@ -235,5 +245,13 @@
         </footer>
     </section>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script>
+        $(Document).ready(function(){
+            $(body).addClass('test');
+        });
+    </script>
 </body>
 </html>
