@@ -14,7 +14,7 @@ $second-color: #F50707;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: .4s linear ease;
+    transition: .1s ease;
     outline: none;
     list-style-type: none;
     text-decoration: none;
@@ -108,7 +108,7 @@ header, section{
         color: $second-color;
     }
 }
-mark {
+.couleur {
     color: $second-color;
     text-transform: capitalize;
 }
@@ -229,6 +229,8 @@ footer {
 
 article p{
     text-align: start;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .blur{
@@ -253,6 +255,90 @@ article p{
 
 //******Election Page**********////////
 
+.electionPage{
+  width: 100%;
+    .badge{
+        padding: 10px;
+
+        span{
+            padding: 15px;
+            margin-left: 5px;
+            color: #fff!important;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 13px;
+
+        }
+    }
+
+    .conteneur .general{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2;
+        place-items: center;
+
+       @media (max-width: 768px){
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+       
+
+        .card{
+            border: none;
+        
+            letter-spacing: 2px;
+            line-height: 2;
+            padding: 0;
+            margin-bottom: 2rem;
+
+           
+
+            .card-img img{
+               // object-fit: cover;
+               width: 100%;
+                cursor: pointer;
+              //  display: block;
+                @media (max-width: 980px){
+                    width: 400px!important;
+                }
+              
+            }
+
+            .card-body {
+                padding: 0;
+                width: 500px;
+
+                @media (max-width: 980px){
+                    font-size: 12px;
+                    width: 400px;
+                    text-align: justify;
+                 }
+
+                .card-text{
+                    color: #000;
+                    font-weight: 500;
+                    font-size: 15px;
+                    @media (max-width: 980px){
+                       text-align: justify;
+                     }
+                   
+                    
+                &::first-letter{
+                    color: red;
+                    font-size: 35px;
+                }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 576px){
+        .badge{
+            display: none;
+        }
+    }
+}
 
 
 
@@ -278,7 +364,6 @@ article p{
 
 
 
-/////media query
 .test-toggle{
     display: block;
     //transform: translateX(0);
@@ -291,6 +376,9 @@ article p{
         }
     }
 }
+
+
+/////media query
 
 @media (max-width: 980px) {
     .top{
@@ -348,6 +436,8 @@ article p{
         border: none!important;
     }
 
+
+    ///footer
     footer{
 
         width: 100%;

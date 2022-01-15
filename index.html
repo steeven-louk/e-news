@@ -13,17 +13,16 @@
 </head>
 <body>
     <div class="top">
-        <h1 class="nav-title"><a href="" class="nav-brand">s-<mark>news</mark></a></h1>
+        <h1 class="nav-title"><a href="" class="nav-brand">s-<span class="couleur">news</span></a></h1>
         <li id="bars"><i class="far fa-bars"></i></li>
     </div>
     <nav>
         <ul>
             <li class="active"><a href="/" class="nav-link" active>Home</a></li>
-            <li><a href="#" class="nav-link">Actualités</a></li>
             <li><a href="#" class="nav-link">Afrique news</a></li>
+            <li><a href="./electionPage.html" class="nav-link">presidentiel 2022</a></li>
             <li><a href="#" class="nav-link">politique</a></li>
             <li><a href="./singlePage.html" class="nav-link">debat</a></li>
-            <li><a href="./electionPage.html" class="nav-link">presidentiel 2022</a></li>
         </ul>
         
 
@@ -32,23 +31,44 @@
     <header class="mb-5">
         <div class="container">
           <div class="row">
-              <div class="col-12 col-sm-12 col-md-6 img-container">
-                  <img src="https://i.f1g.fr/media/cms/376x208_crop/2021/12/25/1ce688ce4683af3fd97b623204a1d576f3af17e14e228707ede62fd08bf87f6b.jpg" width="100%" height="105%" class='thumbnail' alt="">
+              <div class="col-12 col-sm-12 col-md-6 img-container"
+               style="
+               background-image: url(https://i.f1g.fr/media/cms/376x208_crop/2021/12/25/1ce688ce4683af3fd97b623204a1d576f3af17e14e228707ede62fd08bf87f6b.jpg);
+               background-position: center;
+               background-size: cover;
+               background-repeat: no-repeat;"
+               >
                   <h1 class="titre">Télescope Webb: à Kourou, Ariane 5 réussit «le lancement du siècle»</h1>
               </div>
               <div class="col-12 col-md-6">
                  <div class="row">
-                    <div class="col-12 col-sm-12 col-md-6 img-container">
-                        <img src="https://i.f1g.fr/media/ext/272x152_crop/api-video.lefigaro.fr/assets/75/fd/35/75fd358c6064985038bfc3cf196fe998.jpeg" width="100%" height="100%" alt="">
+                    <div class="col-12 col-sm-12 col-md-6 img-container"
+                    style="
+                    background-image: url(https://i.f1g.fr/media/ext/272x152_crop/api-video.lefigaro.fr/assets/75/fd/35/75fd358c6064985038bfc3cf196fe998.jpeg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;"
+                    >
                         <p class="titre">Poutine veut «détruire l'Ukraine», selon un haut responsable de la sécurité à Kiev</p>
                     </div>
+                    
                     <div class="col-12 col-sm-12 col-md-6 img-container">
                         <img src="https://img.lemde.fr/2021/12/24/134/0/5040/3360/205/0/60/0/5116ea4_840688732-483969.jpg" width="100%" height="100%" alt="">
                         <p class="titre">Ce que l’on sait à ce stade du variant Omicron</p>
                     </div>
                  </div>
-                 <div class="img-container">
-                    <img src="https://img.lemde.fr/2021/11/26/0/0/8367/5578/301/0/75/0/0c3b4b8_533037428-frederic-lenoir67395rec.jpg" class="img-container" width="537" height="200" alt="">
+                 <div class="img-container w-100"
+                 style="
+                 background-image: url(https://img.lemde.fr/2021/11/26/0/0/8367/5578/301/0/75/0/0c3b4b8_533037428-frederic-lenoir67395rec.jpg);
+                 background-position: center;
+                 background-size: cover;
+                 background-repeat: no-repeat;
+                 width: 534px;
+                 height: 200px;
+                 "
+                 
+                 >
+                   
                     <p class="titre">Frédéric Lenoir : « Jung propose une spiritualité en dehors de toute croyance religieuse »</p>
                  </div>
 
@@ -61,7 +81,7 @@
     </header>
 
     <section id="afriqueNews" class="mx-4">
-        <h1 class="titre">afrique<mark>news</mark></h1>
+        <h1 class="titre">afrique<span class="couleur">news</span></h1>
         <hr class="space">
 
         <div class="conteneur">
@@ -130,7 +150,7 @@
     </section>
 
     <section id="electionNews" class="my-5 mx-4">
-        <h1 class="titre">Élection présidentielle<mark>2022</mark></h1>
+        <h1 class="titre">Élection présidentielle<span class="couleur">2022</span></h1>
         <hr class="space">
 
         <div class="conteneur">
@@ -204,7 +224,7 @@
                 <div class='conteneur mx-4 row'>
                    <div class="left col-md-6 col-12">
                         <div class="col-sm-12 col-12 col-md-7 mt-3">
-                            <h1 class=""><a href="/">S-<mark>news</mark></a></h1>
+                            <h1 class="">S-<span class="couleur">news</span></h1>
                             <p class="text-muted">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                  Accusantium, ullam!
@@ -245,17 +265,8 @@
         </footer>
     </section>
 
-
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
-    <script>
-        $(Document).ready(function(){
-            $('#bars ').click(()=>{
-               $('nav').toggleClass('test-toggle')
-            });
-
-           
-        });
-    </script>
+        <script src="./js/toggle.js"></script>
 </body>
 </html>
